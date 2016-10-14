@@ -5,6 +5,9 @@ public class World {
     private PacmanGame pacmanGame;
     private Maze maze;
      
+    public void update(float delta) {
+        pacman.update();
+    }
     World(PacmanGame pacmanGame) {
     	pacman = new Pacman(60,60);
     	maze = new Maze();
